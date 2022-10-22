@@ -1,0 +1,220 @@
+/* Import start */
+/* Font */
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+/* Import end */
+
+/* root start*/
+
+:root {
+  --white: hsl(0, 0%, 100%);
+  --light-grey: hsl(217, 12%, 63%);
+  --medium-grey: hsl(216, 12%, 54%);
+  --dark-blue: hsl(213, 19%, 18%);
+  --very-dark-blue: hsl(216, 12%, 8%);
+  --main-font: "Overpass";
+  --orange: hsl(25, 97%, 53%);
+}
+
+/* root end*/
+/* general styling start */
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--main-font, "sans-serif");
+  background-color: var(--white);
+  color: var(--white);
+}
+
+/* general styling end */
+
+/* main style start */
+
+main {
+  background-color: var(--very-dark-blue);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* main style end */
+
+/* card style start */
+
+.card,
+.after-submit {
+  background: radial-gradient(at 50% 10%, var(--dark-blue) 35%, var(--very-dark-blue) 100%);
+  width: 415px;
+  height: 415px;
+  padding: 25px;
+  box-shadow: 2px 7px 20px 0px #0000004a;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+/* card style end */
+
+/* star holder and image style start */
+
+.card > .star-holder {
+  background-color: var(--dark-blue);
+  padding: 15px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  display: flex;
+}
+
+/* star holder and image style end */
+
+/* card text start */
+
+.card > h2 {
+  font-weight: 700;
+  font-size: 1.9rem;
+}
+
+.card > p {
+  font-weight: 400;
+  font-size: 1rem;
+  color: var(--light-grey);
+  line-height: 1.5;
+}
+
+/* card text end */
+
+/* stars style start */
+.card > .stars {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.card > .stars > li {
+  padding: 15px;
+  width: 50px;
+  height: 50px;
+  background-color: var(--dark-blue);
+  color: var(--medium-grey);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card > .stars > li.clicked {
+  background-color: var(--medium-grey);
+  color: var(--white);
+}
+
+.card > .stars > li:hover {
+  cursor: pointer;
+  background-color: var(--orange);
+  color: var(--white);
+}
+
+/* stars style end */
+
+/* submit button style start */
+.card > .submit {
+  border: 0;
+  outline: 0;
+  width: 100%;
+  padding: 15px;
+  background-color: var(--orange);
+  color: var(--white);
+  font-size: 1.1rem;
+  text-align: center;
+  letter-spacing: 1.6px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+
+.card > .submit:hover {
+  cursor: pointer;
+  background-color: var(--white);
+  color: var(--orange);
+}
+
+/* submit button style end */
+
+/* after-submit start */
+
+.after-submit {
+  display: none;
+  align-items: center;
+  text-align: center;
+}
+
+/* after-submit end */
+
+/* selected style start */
+
+.after-submit > .selected {
+  padding: 15px;
+  background-color: var(--dark-blue);
+  color: var(--orange);
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+
+/* selected style end */
+
+/* after-submit text style start */
+
+.after-submit > h2 {
+  font-size: 2rem;
+}
+
+.after-submit > p {
+  color: var(--light-grey);
+}
+/* after-submit text style end */
+
+@media screen and (max-width: 416px) {
+  .card,
+  .after-submit {
+    width: 365px;
+    height: 415px;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  .card,
+  .after-submit {
+    width: 350px;
+    height: 415px;
+  }
+}
+
+.loading {
+  cursor: progress !important;
+}
