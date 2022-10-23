@@ -7,4 +7,10 @@ with the cursor being changed to peogress
 
 ## Challenge Link
 
-https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI
+#### Front-End Mentor:
+
+https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI/
+
+#### Preview website:
+
+https://mostafa-y-mansour.github.io/interactive-rating-component-main/

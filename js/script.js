@@ -36,47 +36,4 @@ submit.addEventListener("click", () => {
   submit.classList.add("loading");
 });
 
-window.onload = () => {
-  // afterSubmit.style.display = ;
-};
-
-// let a = "aa";
-// a += 1 + "no";
-// console.log(a);
-
-// class User {
-//   constructor(name1) {
-//     this.name = name1;
-//   }
-// }
-
-// let hello = new User((name1 = "mostafa"));
-
-// console.log(hello);
-
-// let pr = new Promise(function (res, rej) {
-//   res(1);
-//   setTimeout(res, 2000, 2);
-// });
-
-// pr.then((a) => console.log(a));
-
-// let go = "yes";
-
-// let x = go;
-// if (go != no) {
-//   x += 1 + "no";
-// }
-
-// console.log(x);
-
-function a(a = 1) {
-  a++;
-  console.log((a -= "a"));
-}
-
-// console.log(fetch(a()));
-
-// setInterval(a, 1000);
-
-a();
+// deleted code not needed
